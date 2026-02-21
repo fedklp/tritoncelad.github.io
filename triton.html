@@ -10,7 +10,7 @@
             padding: 0;
             font-family: Arial, sans-serif;
         }
-        .content {
+        .nav {
             background-color: #333;
             padding: 0rem;
             display: flex;
@@ -18,7 +18,7 @@
             align-items: center;
             gap: 0;
         }
-        .content a {
+        .nav a {
             color: white;
             text-decoration: none;
             padding: 1rem 1.5rem;
@@ -26,10 +26,10 @@
             display: block;
             border-right: 1px solid #555;
         }
-        .content a:last-child {
+        .nav a:last-child {
             border-right: none;
         }
-        .content a:hover {
+        .nav a:hover {
             background-color: #555;
             color: #fff;
         }
@@ -58,10 +58,20 @@
             font-size: 1.2rem;
             padding: 1.5rem;
         }
+        .sections {
+            padding: 2rem;
+            display: grid;
+        }
+        .sections article {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #111;
+            justify-self: center;
+        }
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="nav">
         <a href="#history">История</a>
         <a href="#language">Язык</a>
         <a href="#cuisine">Кухня</a>
@@ -70,5 +80,19 @@
         <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
         <img src="gediminas.jpg">
     </div>
+    <main class="sections">
+        <article class="sections" id="history">
+            <h2>История</h2>
+            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+        </article>
+        <article class="sections" id="language">
+            <h2>Язык</h2>
+            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+        </article>
+        <article class="sections" id="cuisine">
+            <h2>Кухня</h2>
+            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+        </article>
+    </main>
 </body>
 </html>
