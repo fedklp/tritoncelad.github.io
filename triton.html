@@ -63,10 +63,20 @@
             display: grid;
         }
         .sections article {
+            display: flex;
             margin-bottom: 2rem;
             padding-bottom: 2rem;
             border-bottom: 3px solid #111;
             justify-self: center;
+        }
+        .sections article img {
+            align-self: flex-start;
+            width: 25%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .sections article .text {
+            padding: 1%;
         }
     </style>
 </head>
@@ -82,16 +92,25 @@
     </div>
     <main class="sections">
         <article class="sections" id="history">
-            <h2>История</h2>
-            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            <img src="trakai.jpg">
+            <div class="text">
+                <h2>История</h2>
+                <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            </div>
         </article>
         <article class="sections" id="language">
-            <h2>Язык</h2>
-            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            <img src="trakai.jpg">
+            <div class="text">
+                <h2>Язык</h2>
+                <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            </div>
         </article>
         <article class="sections" id="cuisine">
-            <h2>Кухня</h2>
-            <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            <img src="trakai.jpg">
+            <div class="text">
+                <h2>Кухня</h2>
+                <p>Здесь должен быть текст, но я потом скопирую его сюда</p>
+            </div>
         </article>
     </main>
 </body>
