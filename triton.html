@@ -11,7 +11,13 @@
             font-family: Arial, sans-serif;
         }
         .description {
-            background-image: url('trakai.jpg');
+            background: 
+            linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+                ),
+                url('trakai.jpg');
+            /* background-image: url('trakai.jpg'); */
             background-position: center;
             background-size: cover;
             /* --min-height: 500px; */
@@ -23,6 +29,22 @@
             width: 40%;
             padding: 1.5rem;
         }
+        .description p {
+            width: 50%;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+        /* .description::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            pointer-events: none;
+        } */
         .content {
             background-color: #333;
             padding: 0rem;
@@ -46,6 +68,7 @@
             background-color: #555;
             color: #fff;
         }
+
     </style>
 </head>
 <body>
