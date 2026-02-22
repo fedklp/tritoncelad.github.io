@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triton</title>
     <style>
         body {
-            max-width: 100vw; /* Prevent horizontal overflow */
+            max-width: 100vw;
+            /* Prevent horizontal overflow */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             overflow-x: hidden;
         }
+
         .nav {
             background-color: #333;
             padding: 0rem;
@@ -20,6 +23,7 @@
             align-items: center;
             gap: 0;
         }
+
         .nav a {
             color: white;
             text-decoration: none;
@@ -28,42 +32,53 @@
             display: block;
             border-right: 1px solid #555;
         }
+
         .nav a:last-child {
             border-right: none;
         }
+
         .nav a:hover {
             background-color: #555;
             color: #fff;
         }
+
         .description {
-            background: 
-            linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-                ),
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
                 url('trakai.jpg');
             /* background-image: url('trakai.jpg'); */
             background-position: center;
             background-size: cover;
             /* --min-height: 500px; */
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            overflow-x: hidden;
         }
+
         .description img {
-            width: 40%;
+            width: 100%;
+            max-width: 40%;
             padding: 1%;
+            box-sizing: border-box;
         }
+
         .description .description_text {
-            width: 50%;
+            width: 100%;
+            max-width: 50%;
             color: white;
             font-size: 0.5rem;
             padding: 1.5rem;
+            box-sizing: border-box;
         }
+
         .sections {
             padding-top: 2rem;
             display: grid;
         }
+
         .sections article {
             display: flex;
             margin-bottom: 2rem;
@@ -71,21 +86,25 @@
             border-bottom: 3px solid #111;
             justify-self: center;
         }
+
         .sections article img {
             align-self: flex-start;
             width: 11rem;
             height: 10rem;
             margin-bottom: 1rem;
         }
+
         .sections article .text {
             padding-left: 2%;
             font-size: 100%;
         }
+
         .sections article .text h2 {
             margin: 0;
         }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <a href="#history">История</a>
@@ -94,7 +113,7 @@
         <a href="#geography">География</a>
     </div>
     <div class="description">
-        <div class ="description_text">
+        <div class="description_text">
             <h1>Твоя Литва</h1>
             <p>Далеко не каждый житель земного шара слышал про маленькую страну у далёкого моря, но, оказавшись здесь
                 однажды, не забудет её никогда! Литва - это уникальная природа, история, культура и, кончно же, люди.
@@ -109,7 +128,8 @@
             <img src="saulė.jpg">
             <div class="text">
                 <h2>История</h2>
-                <p>Без знания истории Литвы невозможно понять не только становление соседних государств, но и Европу вообще. Термин "Литва" впервые...</p>
+                <p>Без знания истории Литвы невозможно понять не только становление соседних государств, но и Европу
+                    вообще. Термин "Литва" впервые...</p>
                 <a href="history.html">Подробнее</a>
             </div>
         </article>
@@ -117,7 +137,8 @@
             <img src="katekizmas.jpg" style="height: 16rem;">
             <div class="text">
                 <h2>Язык</h2>
-                <p>Дискуссии о генезисе литовского языка не утехают по сей день. Насколько он, и балтийские языки вообще, родственны славянским?<br>
+                <p>Дискуссии о генезисе литовского языка не утехают по сей день. Насколько он, и балтийские языки
+                    вообще, родственны славянским?<br>
                     Насколько правомерно считать его наиболее близким к праиндоевропейскому? Одно можно сказать точно...
                 </p>
                 <a href="language.html">Подробнее</a>
@@ -127,7 +148,8 @@
             <img src="cepelinai.jpg">
             <div class="text">
                 <h2>Кухня</h2>
-                <p>Литва это только красиво и увлекательно, это ещё и вкусно! Короритность и калорийность - два столпа литовской кухни. Отведав цеппелин, холодного борща...</p>
+                <p>Литва это только красиво и увлекательно, это ещё и вкусно! Короритность и калорийность - два столпа
+                    литовской кухни. Отведав цеппелин, холодного борща...</p>
                 <a href="cuisine.html">Подробнее</a>
             </div>
         </article>
@@ -135,9 +157,11 @@
             <img src="nemunas.avif">
             <div class="text">
                 <h2>География</h2>
-                <p>Литву порадил ледник. Рельеф, русла рек, очертания озёр и даже балтийское море - всё это было "очертано" тоннами отсупающего льда. Около...</p>
+                <p>Литву порадил ледник. Рельеф, русла рек, очертания озёр и даже балтийское море - всё это было
+                    "очертано" тоннами отсупающего льда. Около...</p>
                 <a href="geography.html">Подробнее</a>
             </div>
     </main>
 </body>
+
 </html>
