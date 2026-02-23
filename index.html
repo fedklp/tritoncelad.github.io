@@ -1,22 +1,177 @@
-<DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-</head>
-<body>
-	<h1>
-		Отче наш, И́же еси́ на небесе́х!
-		Да святи́тся и́мя Твое́,
-		да прии́дет Ца́рствие Твое́,
-		да бу́дет во́ля Твоя́,
-		я́ко на небеси́ и на земли́.
-		Хлеб наш насу́щный даждь нам днесь;
-		и оста́ви нам до́лги на́ша,
-		я́коже и мы оставля́ем должнико́м на́шим;
-		и не введи́ нас во искуше́ние,
-		но изба́ви нас от лука́ваго.
-	</h1>
-	<a href=triton.html>tritoncelad</a>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triton</title>
+    <style>
+        body {
+            max-width: 100vw;
+            /* Prevent horizontal overflow */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .nav {
+            background-color: #333;
+            padding: 0rem;
+            display: flex;
+
+            align-items: center;
+            gap: 0;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0rem;
+            font-size: 1rem;
+            display: block;
+            border-right: 1px solid #555;
+        }
+
+        .nav a:last-child {
+            border-right: none;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .description {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                url('trakai.jpg');
+            /* background-image: url('trakai.jpg'); */
+            background-position: center;
+            background-size: 100% 100%;
+            /* --min-height: 500px; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .description img {
+            width: 100%;
+            max-width: 40%;
+            padding: 1%;
+            box-sizing: border-box;
+        }
+
+        .description .description_text {
+            width: 100%;
+            max-width: 50%;
+            color: white;
+            font-size: 0.5rem;
+            padding: 1.5rem;
+            box-sizing: border-box;
+        }
+
+        .sections {
+            padding-top: 2rem;
+            display: grid;
+        }
+
+        .sections article {
+            display: flex;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #111;
+            justify-self: center;
+        }
+
+        .sections article img {
+            align-self: flex-start;
+            width: 11rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+        }
+
+        .sections article .text {
+            padding-left: 2%;
+            font-size: 100%;
+        }
+
+        .sections article .text h2 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="nav">
+        <a href="#history">История</a>
+        <a href="#language">Язык</a>
+        <a href="#cuisine">Кухня</a>
+        <a href="#geography">География</a>
+    </div> -->
+    <div class="description">
+        <div class="description_text">
+            <h1>Твоя Литва</h1>
+            <p>Далеко не каждый житель земного шара слышал про маленькую страну у далёкого моря, но, оказавшись здесь
+                однажды, не забудет её никогда! Литва - это уникальная природа, история, культура и, кончно же, люди.
+                Этот сайт позволит тебе, дорогой читатель, ближе познакмиться с очаровательной Балтийской республикой,
+                доброжелательной к любому путешественнику - реальному или виртуальному.
+            </p>
+        </div>
+        <img src="gediminas.jpg">
+    </div>
+    <main class="sections">
+        <article class="sections" id="history">
+            <img src="saulė.jpg">
+            <div class="text">
+                <h2>История</h2>
+                <p>Без знания истории Литвы невозможно понять не только становление соседних государств, но и Европу
+                    вообще. Термин "Литва" впервые...</p>
+                <a href="history.html">Подробнее</a>
+            </div>
+        </article>
+        <article class="sections" id="language">
+            <img src="katekizmas.jpg" style="height: 16rem;">
+            <div class="text">
+                <h2>Язык</h2>
+                <p>Дискуссии о генезисе литовского языка не утехают по сей день. Насколько он, и балтийские языки
+                    вообще, родственны славянским?<br>
+                    Насколько правомерно считать его наиболее близким к праиндоевропейскому? Одно можно сказать точно...
+                </p>
+                <a href="language.html">Подробнее</a>
+            </div>
+        </article>
+        <article class="sections" id="cuisine">
+            <img src="cepelinai.jpg">
+            <div class="text">
+                <h2>Кухня</h2>
+                <p>Литва это только красиво и увлекательно, это ещё и вкусно! Короритность и калорийность - два столпа
+                    литовской кухни. Отведав цеппелин, холодного борща...</p>
+                <a href="cuisine.html">Подробнее</a>
+            </div>
+        </article>
+        <article class="sections" id="geography">
+            <img src="nemunas.avif">
+            <div class="text">
+                <h2>География</h2>
+                <p>Литву порадил ледник. Рельеф, русла рек, очертания озёр и даже балтийское море - всё это было
+                    "очертано" тоннами отсупающего льда. Около...</p>
+                <a href="geography.html">Подробнее</a>
+            </div>
+        </article>
+        <article class="sections" id="attractions">
+            <img src="trakai.jpg">
+            <div class="text">
+                <h2>Достопримечательности</h2>
+                <p>Многообразие литовской культуры запечетлено и во многообразии её достопримечательностей: <br>
+                    природные красоты, архитектура барокко, наследие русского и немецкого прошлого её регионов...</p>
+                <a href="happy_birthday.html">Подробнее</a>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
