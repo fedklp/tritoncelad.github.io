@@ -11,10 +11,10 @@
             margin: 0;
             padding: 0;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
+            display: grid;
             flex-direction: column;
             justify-content: center;
-            /* grid-template-rows: 10% 1fr / 2.5% 1fr 2.5%; */
+            grid-template-rows: 10% 1fr 10%/ 2.5% 1fr 2.5%;
             gap: 8px;
         }
         img {
@@ -29,11 +29,17 @@
         img:hover {
             transform:  scale(1.05);
         }
-        .images {
+        .top {
             display: flex;
             justify-content: space-between;
 
-            /* grid-area: 1 / 1 / span 1 / span 3; */
+            grid-area: 1 / 1 / span 1 / span 3;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+
+            grid-area: 3 / 1 / span 1 / span 3;
         }
         .text {
             /* grid-area: 2 / 2 / 2 / 2; */
@@ -49,10 +55,7 @@
         </style>
 </head>
 <body>
-    <div class = images>
-        <img src="trakai.jpg">
-        <img src="trakai.jpg">
-        <img src="trakai.jpg">
+    <div class = top>
         <img src="trakai.jpg">
         <img src="trakai.jpg">
     </div>
@@ -66,6 +69,10 @@
             <p>Ну и, конечно, чтобы наш союз и чувство становились только крепче. Ведь не каждый день на просторах космоса встречаются Тритон и Энцелад 💫</p>
 
             <p>С праздником, Эля❤️</p>
+    </div>
+    <div class = bottom>
+        <img src="trakai.jpg">
+        <img src="trakai.jpg">
     </div>
 </body>
 </html>
